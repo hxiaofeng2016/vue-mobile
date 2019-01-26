@@ -1,6 +1,5 @@
 // request拦截器
 import axios from 'axios'
-import { Message } from 'element-ui'
 import router from '../router'
 // 创建axios实例
 const service = axios.create({
@@ -91,7 +90,7 @@ service.interceptors.response.use(
       }
       serviceTips = error.response.data
     }
-    Message.error(serviceTips)
+    console.log(serviceTips)
     return Promise.reject(serviceTips)
   }
 )
