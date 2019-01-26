@@ -1,0 +1,25 @@
+{
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "eslint.options": {
+    "configFile": ".eslintrc.js"
+  },
+  "eslint.validate": ["javascript", "html", "vue"],
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  // vue 格式化
+  "vetur.format.defaultFormatter.html": "js-beautify-html",
+  "vetur.format.defaultFormatterOptions": {
+    "js-beautify-html": {
+      "wrap_attributes": "force"
+    },
+    "prettier": {
+      "singleQuote": true, // 使用单引号
+      "semi": false // 是否在某一行末加分号
+    }
+  },
+  "path-autocomplete.pathMappings": {
+    "@": "${folder}/src"
+  },
+  "git.ignoreLimitWarning": true
+}
